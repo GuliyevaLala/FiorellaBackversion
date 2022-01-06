@@ -1,0 +1,709 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+@model HomeVM
+
+
+<!-- slider part begins -->
+<section id="slider">
+    <div class="slideshow">
+        <div class="item text-center active" style="display: block;">
+            <!-- <img src="./~/Assets/photos/1.png" alt=""> -->
+            <span class="leftchevron">03</span>
+            <span class="rightchevron">02</span>
+        </div>
+
+        <div class="item text-center">
+            <!-- <img src="./~/Assets/photos/2.png" alt=""> -->
+            <span class="leftchevron">01</span>
+            <span class="rightchevron">03</span>
+        </div>
+
+        <div class="item text-center">
+            <!-- <img src="./~/Assets/photos/3.png" alt=""> -->
+            <span class="leftchevron">02</span>
+            <span class="rightchevron">01</span>
+        </div>
+    </div>
+    <span class="left line">&#10229;</span>
+    <span class="right line">&#10230;</span>
+    <div class="text">
+        <h2>Send <span>Flowers</span> Like you mean it</h2>
+        <p>
+            Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers will
+            make it special cursus a sit amet mauriss
+        </p>
+    </div>
+    <div class="sign">
+        <img src="~/Assets/photos/sign.png" alt="">
+    </div>
+</section>
+<!-- slider part end-->
+<!-- shopping -->
+
+<section id="shop">
+    <div class="container">
+        <div class="row">
+            <div class="categories">
+                <ul>
+                    <li><a class="activeCategory" data-id="1">ALL</a></li>
+                    <li><a data-id="2">POPULAR</a></li>
+                    <li><a data-id="3">WINTER</a></li>
+                    <li><a data-id="4">VARIOUS</a></li>
+                    <li><a data-id="5">EXOTIC</a></li>
+                    <li><a data-id="6">GREENS</a></li>
+                    <li><a data-id="7">CACTUSES</a></li>
+                </ul>
+            </div>
+
+            <div class="types">
+                <div class="type all activetype" data-id="1">
+                    <div class="row text-center">
+                        <div class="col-lg-3 col-md-4 col-sm-6 flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-1.png" alt="">
+                            </div>
+                            <div class="text text-center">
+                                <div class="name">MAJESTY PALM</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$259</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-2.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">FOXGLOVE FLOWER</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$259</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-3.png" alt="">
+                                <div class="card-body expired">
+                                    <p>Sold</p>
+                                </div>
+
+                            </div>
+                            <div class="text">
+                                <div class="name">SWEET ALYSSUM</div>
+                                <div class="action">Read More</div>
+                                <div class="price">$259</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-4.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">SPRING SNOWFLAKE</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$170</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-5.png" alt="">
+                                <div class="card-body saleproduct">
+                                    <p>Sale</p>
+                                </div>
+
+                            </div>
+                            <div class="text">
+                                <div class="name">SCARLET SAGE</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price"><del></del>$159</div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-6.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">ROCK SOAPWORT</div>
+                                <div class="action">View products</div>
+                                <div class="price">$259</div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-7.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">SUMMER SAVORY</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$259</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-8.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">WILD ROSES</div>
+                                <div class="action">Buy on Amazon</div>
+                                <div class="price">$259</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="type popular" data-id="2">
+                    <div class="row text-center">
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-1.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">MAJESTY PALM</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$259</div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-2.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">FOXGLOVE FLOWER</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$259</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-3.png" alt="">
+                                <div class="card-body  expired">
+                                    <p>Sold</p>
+                                </div>
+
+                            </div>
+                            <div class="text">
+                                <div class="name">SWEET ALYSSUM</div>
+                                <div class="action">Read More</div>
+                                <div class="price">$259</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-4.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">SPRING SNOWFLAKE</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$170</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-5.png" alt="">
+                                <div class="card-body saleproduct">
+                                    <p>Sale</p>
+                                </div>
+
+                            </div>
+                            <div class="text">
+                                <div class="name">SCARLET SAGE</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price"><del>$259 </del>$159</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="type winter" data-id="3">
+                    <div class="row text-center">
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-1.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">MAJESTY PALM</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$259</div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-2.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">FOXGLOVE FLOWER</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$259</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-3.png" alt="">
+                                <div class="card-body  expired">
+                                    <p>Sold</p>
+                                </div>
+
+                            </div>
+                            <div class="text">
+                                <div class="name">SWEET ALYSSUM</div>
+                                <div class="action">Read More</div>
+                                <div class="price">$259</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-4.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">SPRING SNOWFLAKE</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$170</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="type various" data-id="4">
+                    <div class="row text-center">
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-9.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">ROCK SOAPWORT</div>
+                                <div class="action">View products</div>
+                                <div class="price">$259</div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-7.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">SUMMER SAVORY</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$259</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-8.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">WILD ROSES</div>
+                                <div class="action">Buy on Amazon</div>
+                                <div class="price">$259</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-10.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">COLORFUL TULIPS</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$350</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-11.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">WILD CACTUS</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$159</div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-12.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">PINK FLOWER TREE</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$180</div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-13.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">CACTUS IN ORANGE</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$259</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-14.png" alt="">
+                                <div class="card-body saleproduct">
+                                    <p>Sale</p>
+                                </div>
+
+                            </div>
+                            <div class="text">
+                                <div class="name">ORANGE AMARYLLIS</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price"><del>$259 </del>$159</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="type exotic" data-id="5">
+                    <div class="row text-center">
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-8.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">WILD ROSES</div>
+                                <div class="action">Buy on Amazon</div>
+                                <div class="price">$259</div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-10.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">COLORFUL TULIPS</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$350</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/oa-2.png" alt="">
+
+                            </div>
+                            <div class="text">
+                                <div class="name">ORANGE AMARYLLIS</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$259</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="type greens" data-id="6">
+                    <div class="row text-center">
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-7.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">SUMMER SAVORY</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$259</div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-12.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">PINK FLOWER TREE</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$180</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-1.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">SCHEFFLERA</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$259</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="type cactuses" data-id="7">
+                    <div class="row text-center">
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-9.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">ROCK SOAPWORT</div>
+                                <div class="action">View products</div>
+                                <div class="price">$259</div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-11.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">WILD CACTUS</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$159</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6  flower" data-id="fpp">
+                            <div class="image">
+                                <img src="~/Assets/photos/flower-13.png" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="name">CACTUS IN ORANGE</div>
+                                <div class="action">Add to Cart</div>
+                                <div class="price">$259</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+</section>
+<!-- shopping end -->
+<!-- valentine start here -->
+<section id="valentine">
+    <div class="container">
+        <div class="row">
+            <div class="valentineVideo col-lg-6 col-12">
+                <div class="videopart">
+                    <a href="https://www.youtube.com/watch?time_continue=1&v=K-0cjGCNYfs&_ga=2.126556296.4699611.1577879082-1931381707.1577026708"
+                       target="_self"><img src="~/Assets/photos/video-image.png" alt=""></a>
+                    <i class="fas fa-play"></i>
+                </div>
+            </div>
+            <div class="quote col-lg-6 col-12">
+                <div class="title">
+                    <h1>Surprise Your <span> Valentine!</span></h1>
+                    <h1>Let us arrange a smile.</h1>
+                </div>
+                <div class="context">
+                    <p>
+                        Where flowers are our inspiration to create lasting memories. <br> Whatever the
+                        occasion...
+                    </p>
+                </div>
+                <div class="hearticons">
+                    <div class="loveto">
+                        <img src="./~/Assets/photos/heart.png" alt=""><span>
+                            Hand picked just for you.
+                        </span>
+                    </div>
+                    <div class="savethe">
+                        <img src="./~/Assets/photos/heart.png" alt=""><span>Unique flower arrangements</span>
+                    </div>
+                    <div class="world">
+
+                        <img src="./~/Assets/photos/heart.png" alt=""><span>Best way to say you care.</span>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- valentine end -->
+<!-- team  -->
+<section id="team">
+    <div class="container">
+        <div class="text text-center col-lg-12 col-md-12 col-sm-12 col-12">
+            <p class="header">Flower Experts</p>
+            <p class="description">
+                A perfect blend of creativity, energy, communication, happiness and love. Let
+                us
+                arrange a smile for you.
+            </p>
+        </div>
+        <div class="row mt-5">
+
+            @foreach (Experts expert in Model.Experts)
+            {
+                <div class="expert col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="photo">
+                        <img src="@expert.Image"
+                             alt="">
+                    </div>
+                    <div class="name">
+                        <p>@expert.Fullname</p>
+                    </div>
+                    <div class="job">
+                        <p>@expert.Position</p>
+                    </div>
+                </div>
+
+            }
+
+
+
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- team end -->
+<!-- subscribe field start -->
+
+<section id="subscribe-field">
+    <div class="container">
+        <div class="text text-center col-lg-12 col-md-12 col-sm-12 col-12">
+            <p>Join The Colorful Bunch!</p>
+        </div>
+        <div class="row no-gutters justify-content-center">
+            <div class="email col-lg-6 col-md-6 col-sm-6 col-6">
+                <input type="email" class="input" placeholder="Email Address" autocomplete="off">
+            </div>
+            <div class="subscribe col-lg-2 col-md-2 col-sm-2 col-2">
+                <input type="submit" value="SUBSCRIBE" class="button">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- subscribe field end -->
+<!-- blog field start here -->
+
+
+<section id="blog">
+    <div class="container">
+        <div class="text text-center col-lg-12 col-md-12 col-sm-12 col-12">
+            <p class="header">From our Blog</p>
+            <p class="description">
+                A perfect blend of creativity, energy, communication, happiness and love. Let
+                us
+                arrange a smile for you.
+            </p>
+        </div>
+        <div class="row mt-5">
+            <div class="item col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="image">
+                    <img src="~/Assets/photos/blog-1.png" alt="">
+                    <div class="date">
+                        <p>27.04.2018</p>
+                    </div>
+                </div>
+                <div class="title">Flower Power</div>
+                <div class="info">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</div>
+            </div>
+            <div class="item col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="image">
+                    <img src="~/Assets/photos/blog-2.png" alt="">
+                    <div class="date">
+                        <p>03.05.2018</p>
+                    </div>
+                </div>
+                <div class="title">Local Florists</div>
+                <div class="info">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</div>
+            </div>
+            <div class="item col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="image">
+                    <img src="~/Assets/photos/blog-3.png" alt="">
+                    <div class="date">
+                        <p>03.05.2018</p>
+                    </div>
+                </div>
+                <div class="title">Flower Beauty</div>
+                <div class="info">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- blog end-->
+<section id="carousel">
+    <div class="container">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="testimonal">
+                    <div class="test-bar">
+                        <div class="test-img">
+                            <img src="./~/Assets/photos/expert-1.png" alt="">
+                        </div>
+                        <div class="test-text">
+                            <p>
+                                Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus
+                                lingua.
+                            </p>
+                        </div>
+                        <div class="author-name">
+                            <p>Anna Barnes</p>
+
+                        </div>
+                        <div class="author-job">
+                            <p>Florist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonal">
+                    <div class="test-bar">
+                        <div class="test-img">
+                            <img src="./~/Assets/photos/expert-4.png" alt="">
+                        </div>
+                        <div class="test-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                eget.
+                            </p>
+                        </div>
+                        <div class="author-name">
+                            <p>Anna Barnes</p>
+
+                        </div>
+                        <div class="author-job">
+                            <p>Florist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+
+
+<!-- INSTAGRAM START -->
+
+<section id="instagram">
+    <div class="owl-carousel instagram">
+        <div><img src="~/Assets/photos/owl-1.jpg" style="width: 317.8px; margin-right: 10px;" class="img-fluid" alt=""></div>
+        <div><img src="~/Assets/photos/owl-2.jpg" style="width: 317.8px; margin-right: 10px;" class="img-fluid" alt=""></div>
+        <div><img src="~/Assets/photos/owl-3.jpg" style="width: 317.8px; margin-right: 10px;" class="img-fluid" alt=""></div>
+        <div><img src="~/Assets/photos/owl-4.jpg" style="width: 317.8px; margin-right: 10px;" class="img-fluid" alt=""></div>
+        <div><img src="~/Assets/photos/owl-5.jpg" style="width: 317.8px; margin-right: 10px;" class="img-fluid" alt=""></div>
+        <div><img src="~/Assets/photos/owl-6.jpg" style="width: 317.8px; margin-right: 10px;" class="img-fluid" alt=""></div>
+        <div><img src="~/Assets/photos/owl-7.jpg" style="width: 317.8px; margin-right: 10px;" class="img-fluid" alt=""></div>
+        <div><img src="~/Assets/photos/owl-8.jpg" style="width: 317.8px; margin-right: 10px;" class="img-fluid" alt=""></div>
+    </div>
+    <div class="hastag bg-light text-muted py-2 px-3">
+        #FIORELLO
+    </div>
+</section>
+
+<!-- INSTAGRAM END -->
