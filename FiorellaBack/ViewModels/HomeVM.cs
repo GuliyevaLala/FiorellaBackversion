@@ -9,6 +9,8 @@ namespace FiorellaBack.ViewModels
     public class HomeVM
     {
         public List<Experts> Experts { get; set; }
+        public List<Flower> Flowers { get; set; }
+
 
     }
 }

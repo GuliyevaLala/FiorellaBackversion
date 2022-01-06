@@ -2,6 +2,7 @@
 using FiorellaBack.Models;
 using FiorellaBack.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -25,7 +26,9 @@ namespace FiorellaBack.Controllers
         {
             HomeVM homeVM = new HomeVM
             {
-                Experts = _context.Experts.ToList()
+                Experts = _context.Experts.ToList(),
+                Flowers = _context.Flowers.Include(g => g.FlowerImages).Include(g => g.FlowersCategories).ThenInclude(g => g.Category).ToList()
+
             };
 
             return View(homeVM);

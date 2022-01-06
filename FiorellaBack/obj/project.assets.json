@@ -8480,11 +8480,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\FiorellaBack\\FiorellaBack.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\FiorellaisCameBack\\FiorellaBack\\FiorellaBack.csproj",
       "projectName": "FiorellaBack",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\FiorellaBack\\FiorellaBack.csproj",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\FiorellaisCameBack\\FiorellaBack\\FiorellaBack.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\FiorellaBack\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\FiorellaisCameBack\\FiorellaBack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
