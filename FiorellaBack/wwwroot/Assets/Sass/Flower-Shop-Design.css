@@ -678,7 +678,7 @@ main #shop .categories li {
   cursor: pointer;
   float: left;
   margin-right: 25px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   letter-spacing: 1.6px;
   font-weight: 500;
@@ -695,116 +695,124 @@ main #shop .categories li a:hover {
   color: #fa4534;
 }
 
-main #shop .types {
+main #shop .products .product {
+  margin-left: 25px;
   cursor: pointer;
-}
-
-main #shop .types .type {
-  display: none;
-}
-
-main #shop .types .activetype {
-  display: block;
-}
-
-main #shop .types .flower {
-  overflow: hidden;
   margin-top: 15px;
 }
 
-main #shop .types .flower .text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 400;
-  position: relative;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 295px;
+main #shop .products .product:hover .text {
+  opacity: 1;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-main #shop .types .flower .text .name {
-  font-size: 12px;
+main #shop .products .product:hover .price {
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-main #shop .types .flower .text .action {
-  margin-left: -300px;
+main #shop .products .product .text {
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main #shop .products .product .image {
   overflow: hidden;
-  color: #afafaf;
-  font-size: 12px;
-  position: absolute;
-  cursor: pointer;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
-}
-
-main #shop .types .flower .text .action:hover {
-  color: #fa4534;
-}
-
-main #shop .types .flower .text .price {
-  color: #afafaf;
-  font-size: 12px;
-}
-
-main #shop .types .flower .image {
-  margin-left: 15px;
   position: relative;
-  width: 100%;
-  overflow: hidden;
 }
 
-main #shop .types .flower .image img {
-  width: 100%;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-
-main #shop .types .flower .image img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-main #shop .types .flower .image .expired {
+main #shop .products .product .image .sale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 29px;
+  background-color: white;
   position: absolute;
-  display: block;
-  top: 0;
-  width: auto;
-  height: 30px;
-  background: #0e0000;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+  z-index: 10;
+}
+
+main #shop .products .product .image .sale span {
+  color: black;
+}
+
+main #shop .products .product .image .sold {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 29px;
+  background-color: black;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  text-align: center;
+  z-index: 10;
+}
+
+main #shop .products .product .image .sold span {
   color: white;
-  font-family: "Lora", serif;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 1px;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 10px 0 0 12px;
-  padding: 6px 13px;
-  z-index: 100;
 }
 
-main #shop .types .flower .image .saleproduct {
-  position: absolute;
-  display: block;
-  top: 0;
-  width: auto;
-  height: 30px;
-  background: #fcfcfc;
-  color: #030101;
-  font-family: "Lora", serif;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 1px;
+main #shop .products .product .image:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main #shop .products .product .image img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 295px;
+  height: 380px;
+}
+
+main #shop .products .product .productName {
+  font-size: 13px;
+  margin-top: 10px;
   text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 10px 0 0 12px;
-  padding: 5px 13px;
-  z-index: 100;
+  letter-spacing: 1.5px;
+}
+
+main #shop .products .product .productPrice {
+  width: 100%;
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+  color: grey;
+}
+
+main #shop .products .product .productPrice .price {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  right: 35px;
 }
 
 main #valentine {

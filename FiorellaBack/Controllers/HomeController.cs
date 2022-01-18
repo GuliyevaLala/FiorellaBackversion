@@ -21,19 +21,17 @@ namespace FiorellaBack.Controllers
             _context = context;
         }
 
-
-        public ActionResult Index()
+        public IActionResult Index()
         {
-            HomeVM homeVM = new HomeVM
+            HomeVM model = new HomeVM
             {
-                Experts = _context.Experts.ToList(),
-                Flowers = _context.Flowers.Include(g => g.FlowerImages).Include(g => g.FlowersCategories).ThenInclude(g => g.Category).ToList()
-
+                Expertss = _context.Expertss.ToList(),
+                Categories = _context.Categories.ToList(),
+                Flowers = _context.Flowers.Include(f => f.FlowerImages).Include(f => f.Campaign).Include(f => f.FlowerCategories).ThenInclude(fc => fc.Category).ToList(),
+                Setting = _context.Settings.FirstOrDefault()
             };
-
-            return View(homeVM);
+            return View(model);
         }
-
+        
     }
-
 }

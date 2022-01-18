@@ -7,7 +7,6 @@
   &::selection {
     background: #fa4534;
     color: white;
-    
   }
 }
 
@@ -700,116 +699,118 @@ main {
         font-weight: 500;
       }
     }
+    .products{
+      .product{
+        margin-left: 25px;
 
-    .types {
-      cursor: pointer;
 
-      .type {
-        display: none;
-      }
+        &:hover .text {
+          opacity: 1;
+          transform: translateX(10px);
+          transition: 0.3s;
+        }
+        &:hover .price {
+          transform: translateX(100px);
+          opacity: 0;
+          transition: 0.3s;
+        }
+        .text {
+          transform: translateX(-100px);
+          opacity: 0;
+          transition: 0.3s;
+        }
 
-      .activetype {
-        display: block;
-      }
-
-      .flower {
-
-        overflow: hidden;
+        cursor: pointer;
         margin-top: 15px;
 
-        .text {
-          font-family: "Montserrat", sans-serif;
-          font-size: 15px;
-          line-height: 24px;
-          font-weight: 400;
-          position: relative;
-          margin-top: 10px;
-          margin-bottom: 10px;
-          width: 295px;
-
-          .name {
-            font-size: 12px;
-          }
-
-          .action {
-            margin-left: -300px;
-            overflow: hidden;
-            color: #afafaf;
-            font-size: 12px;
-            position: absolute;
-            cursor: pointer;
-            transition: color 0.5s;
-
-            &:hover {
-              color: #fa4534;
-
-            }
-          }
-
-          .price {
-            color: #afafaf;
-            font-size: 12px;
-          }
-
-        }
-
         .image {
-          margin-left: 15px;
+            overflow: hidden;
+            position: relative;
 
-          img {
-            width: 100%;
-            transition: transform 0.3s ease;
+            .sale {
+                span {
+                    color: black;
+
+                }
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 29px;
+                background-color: white;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                text-align: center;
+                z-index: 10;
+            }
+
+            .sold {
+                span {
+                    color: white;
+
+                }
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 29px;
+                background-color: black;
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                text-align: center;
+                z-index: 10;
+            }
 
             &:hover {
-              transform: scale(1.1);
+                img {
+                    transform: scale(1.05);
+                }
             }
-          }
 
-          position: relative;
-          width: 100%;
-          overflow: hidden;
-
-          .expired {
-            position: absolute;
-            display: block;
-            top: 0;
-            width: auto;
-            height: 30px;
-            background: #0e0000;
-            color: rgb(255, 255, 255);
-            font-family: "Lora", serif;
-            font-size: 16px;
-            line-height: 19px;
-            letter-spacing: 1px;
-            text-align: center;
-            box-sizing: border-box;
-            margin: 10px 0 0 12px;
-            padding: 6px 13px;
-            z-index: 100;
-          }
-
-          .saleproduct {
-
-            position: absolute;
-            display: block;
-            top: 0;
-            width: auto;
-            height: 30px;
-            background: #fcfcfc;
-            color: rgb(3, 1, 1);
-            font-family: "Lora", serif;
-            font-size: 16px;
-            line-height: 19px;
-            letter-spacing: 1px;
-            text-align: center;
-            box-sizing: border-box;
-            margin: 10px 0 0 12px;
-            padding: 5px 13px;
-            z-index: 100;
-          }
+            img {
+              display: flex;
+                transition: 0.3s;
+                width: 295px;
+                height: 380px;
+            }
         }
+
+        .productName {
+            font-size: 13px;
+            margin-top: 10px;
+            text-align: center;
+            letter-spacing: 1.5px;
+
+
+        }
+
+        .productPrice {
+            width: 100%;
+            font-size: 12px;
+            margin-top: 10px;
+            text-align: center;
+            color: grey;
+
+
+
+
+            .price {
+                transition: 0.3s;
+                position: relative;
+                right: 35px;
+            }
+
+      }
+
+        
       }
     }
+    
+
   }
 
 

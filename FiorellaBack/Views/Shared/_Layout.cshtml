@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="~/Assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="~/Assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="~/Assets/Flower-Shop-Design.css">
+    <link rel="stylesheet" href="~/Assets/Sass/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Assets/Sass/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/Assets/Sass/Flower-Shop-Design.css">
     <title>Fiorello - A Flower shop and Florist WooCommerce Theme</title>
 </head>
 
@@ -220,7 +220,7 @@
                                             <ul>
                                                 <li class="leftsideoption">
                                                     <a href="">
-                                                        <i class="fa fa-angle-left"></i></i>Classic
+                                                        <i class="fa fa-angle-left"></i>Classic
                                                     </a>
                                                     <div class="leftsideoptioninfo">
                                                         <ul>
@@ -234,8 +234,7 @@
                                                 </li>
                                                 <li class="leftsideoption">
                                                     <a href="">
-                                                        <i class="fa fa-angle-left"></i></i>
-                                                        Infographic
+                                                        <i class="fa fa-angle-left"></i>                                                       Infographic
                                                     </a>
                                                     <div class="leftsideoptioninfo">
                                                         <ul>
@@ -343,78 +342,13 @@
         @RenderBody()
 
     </main>
-
-
-    <main>
-        <section id="footer">
-            <footer>
-                <div class="container">
-                    <div class="row upper-row">
-                        <ul class="col-lg-3 col-md-3 col-sm-6 col-12">
-                            <li class="footer-top">CUSTOMER SERVICE</li>
-                            <li class="footer-context">Help & Contact Us</li>
-                            <li class="footer-context">Returns & Refunds</li>
-                            <li class="footer-context">Online Stores</li>
-                            <li class="footer-context">Terms & Conditions</li>
-                        </ul>
-                        <ul class="col-lg-3 col-md-3 col-sm-6 col-12">
-                            <li class="footer-top">COMPANY</li>
-                            <li class="footer-context">About Us</li>
-                            <li class="footer-context">Blog</li>
-                            <li class="footer-context">Order Tracking</li>
-                            <li class="footer-context">FAQ Page</li>
-                            <li class="footer-context">Contact Us</li>
-                            <li class="footer-context">Login</li>
-                        </ul>
-                        <ul class="col-lg-3 col-md-3 col-sm-6 col-12">
-                            <li class="footer-top">SOCIAL MEDIA</li>
-                            <li class="footer-context">Twitter</li>
-                            <li class="footer-context">Instagram</li>
-                            <li class="footer-context">Tumblr</li>
-                            <li class="footer-context">Pinterest</li>
-                        </ul>
-                        <ul class="col-lg-3 col-md-3 col-sm-6 col-12">
-                            <li class="footer-top">ARCHIVE</li>
-                            <li class="footer-context">Designer Shoes</li>
-                            <li class="footer-context">Gallery</li>
-                            <li class="footer-context">Pricing</li>
-                            <li class="footer-context">Feature Index</li>
-                            <li class="footer-context">Login</li>
-                            <li class="footer-context">Help & Support</li>
-                        </ul>
-                    </div>
-                    <div class="row lower-row">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                            <div class="byme">
-                                <p>Powered by <span>Lala Guliyeva</span> 2021</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                            <div class="creditcards">
-                                <img src="photos/credit-cards.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                            <div class="socialmedia">
-                                <span>INSTAGRAM</span>
-                                <span>FACEBOOK</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </section>
-
-        <!-- footer end -->
+     @await Component.InvokeAsync("Footer")
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="/path/to/parallax.js"></script>
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="~/Assets/Js/owl.carousel.min.js"></script>
         <script src="~/Assets/Js/script.js"></script>
         <script src="~/Assets/Js/cart.js"></script>
         <script src="~/Assets/Js/home.js"></script>
-    </main>
 </body>
-</html>   
+</html>    

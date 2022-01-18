@@ -1,10 +1,8 @@
-﻿
+﻿@model HomeVM
+
 @{
     ViewData["Title"] = "Index";
 }
-
-@model HomeVM
-
 
 <!-- slider part begins -->
 <section id="slider">
@@ -46,441 +44,33 @@
 <section id="shop">
     <div class="container">
         <div class="row">
-            <div class="categories">
-                <ul>
-                    <li><a class="activeCategory" data-id="1">ALL</a></li>
-                    <li><a data-id="2">POPULAR</a></li>
-                    <li><a data-id="3">WINTER</a></li>
-                    <li><a data-id="4">VARIOUS</a></li>
-                    <li><a data-id="5">EXOTIC</a></li>
-                    <li><a data-id="6">GREENS</a></li>
-                    <li><a data-id="7">CACTUSES</a></li>
-                </ul>
+            <div class="title-filter d-flex justify-content-between">
+                <div class="productTitle col-lg-10">
+                        <ul class="Types">
+                            <li><a class="types activeCategory" data-id="all" href="#">ALL</a></li>
+                            @foreach (Category category in Model.Categories)
+                            {
+                                <li><a class="types" data-id="@category.Name.ToLower()" href="#">@category.Name.ToUpper()</a></li>
+
+                            }
+                        </ul>
+                    </div>
+                    <ul class="flowerTypes col-lg-6 d-flex justify-content-around">
+                        <li><a class="types" data-id="all" href="#">ALL</a></li>
+                        @foreach (Category ctg in Model.Categories)
+                        {
+                            <li><a class="types" data-id="@ctg.Name.ToLower()" href="#">@ctg.Name.ToUpper()</a></li>
+
+                        }
+                    </ul>
+                </div>
+
             </div>
-
-            <div class="types">
-                <div class="type all activetype" data-id="1">
-                    <div class="row text-center">
-                        <div class="col-lg-3 col-md-4 col-sm-6 flower">
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-1.png" alt="">
-                            </div>
-                            <div class="text text-center">
-                                <div class="name">MAJESTY PALM</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$259</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-2.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">FOXGLOVE FLOWER</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$259</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-3.png" alt="">
-                                <div class="card-body expired">
-                                    <p>Sold</p>
-                                </div>
-
-                            </div>
-                            <div class="text">
-                                <div class="name">SWEET ALYSSUM</div>
-                                <div class="action">Read More</div>
-                                <div class="price">$259</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-4.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">SPRING SNOWFLAKE</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$170</div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-5.png" alt="">
-                                <div class="card-body saleproduct">
-                                    <p>Sale</p>
-                                </div>
-
-                            </div>
-                            <div class="text">
-                                <div class="name">SCARLET SAGE</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price"><del></del>$159</div>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-6.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">ROCK SOAPWORT</div>
-                                <div class="action">View products</div>
-                                <div class="price">$259</div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower">
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-7.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">SUMMER SAVORY</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$259</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-8.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">WILD ROSES</div>
-                                <div class="action">Buy on Amazon</div>
-                                <div class="price">$259</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="type popular" data-id="2">
-                    <div class="row text-center">
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower">
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-1.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">MAJESTY PALM</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$259</div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-2.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">FOXGLOVE FLOWER</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$259</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower">
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-3.png" alt="">
-                                <div class="card-body  expired">
-                                    <p>Sold</p>
-                                </div>
-
-                            </div>
-                            <div class="text">
-                                <div class="name">SWEET ALYSSUM</div>
-                                <div class="action">Read More</div>
-                                <div class="price">$259</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower">
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-4.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">SPRING SNOWFLAKE</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$170</div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower">
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-5.png" alt="">
-                                <div class="card-body saleproduct">
-                                    <p>Sale</p>
-                                </div>
-
-                            </div>
-                            <div class="text">
-                                <div class="name">SCARLET SAGE</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price"><del>$259 </del>$159</div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="type winter" data-id="3">
-                    <div class="row text-center">
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower">
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-1.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">MAJESTY PALM</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$259</div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-2.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">FOXGLOVE FLOWER</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$259</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower">
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-3.png" alt="">
-                                <div class="card-body  expired">
-                                    <p>Sold</p>
-                                </div>
-
-                            </div>
-                            <div class="text">
-                                <div class="name">SWEET ALYSSUM</div>
-                                <div class="action">Read More</div>
-                                <div class="price">$259</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower">
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-4.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">SPRING SNOWFLAKE</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$170</div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="type various" data-id="4">
-                    <div class="row text-center">
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-9.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">ROCK SOAPWORT</div>
-                                <div class="action">View products</div>
-                                <div class="price">$259</div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-7.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">SUMMER SAVORY</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$259</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-8.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">WILD ROSES</div>
-                                <div class="action">Buy on Amazon</div>
-                                <div class="price">$259</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-10.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">COLORFUL TULIPS</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$350</div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-11.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">WILD CACTUS</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$159</div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-12.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">PINK FLOWER TREE</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$180</div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower">
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-13.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">CACTUS IN ORANGE</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$259</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower">
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-14.png" alt="">
-                                <div class="card-body saleproduct">
-                                    <p>Sale</p>
-                                </div>
-
-                            </div>
-                            <div class="text">
-                                <div class="name">ORANGE AMARYLLIS</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price"><del>$259 </del>$159</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="type exotic" data-id="5">
-                    <div class="row text-center">
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower">
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-8.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">WILD ROSES</div>
-                                <div class="action">Buy on Amazon</div>
-                                <div class="price">$259</div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower">
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-10.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">COLORFUL TULIPS</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$350</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/oa-2.png" alt="">
-
-                            </div>
-                            <div class="text">
-                                <div class="name">ORANGE AMARYLLIS</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$259</div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="type greens" data-id="6">
-                    <div class="row text-center">
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-7.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">SUMMER SAVORY</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$259</div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-12.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">PINK FLOWER TREE</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$180</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower">
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-1.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">SCHEFFLERA</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$259</div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="type cactuses" data-id="7">
-                    <div class="row text-center">
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower">
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-9.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">ROCK SOAPWORT</div>
-                                <div class="action">View products</div>
-                                <div class="price">$259</div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower">
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-11.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">WILD CACTUS</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$159</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6  flower" >
-                            <div class="image">
-                                <img src="~/Assets/photos/flower-13.png" alt="">
-                            </div>
-                            <div class="text">
-                                <div class="name">CACTUS IN ORANGE</div>
-                                <div class="action">Add to Cart</div>
-                                <div class="price">$259</div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
+            <div class="products d-flex flex-wrap ">
+                @await Html.PartialAsync("_PartialView")
             </div>
         </div>
-
+    </div>
 </section>
 <!-- shopping end -->
 <!-- valentine start here -->
@@ -540,7 +130,7 @@
         </div>
         <div class="row mt-5">
 
-            @foreach (Experts expert in Model.Experts)
+            @foreach (Experts expert in Model.Expertss)
             {
                 <div class="expert col-lg-3 col-md-6 col-sm-12 col-12">
                     <div class="photo">
@@ -561,7 +151,7 @@
 
         </div>
     </div>
-    
+
 </section>
 
 <!-- team end -->

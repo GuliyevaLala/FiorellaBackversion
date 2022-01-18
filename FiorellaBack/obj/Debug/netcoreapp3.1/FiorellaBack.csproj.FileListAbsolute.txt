@@ -292,3 +292,13 @@ C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\F
 C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\FiorellaBack.dll
 C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\FiorellaBack.pdb
 C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\FiorellaBack.genruntimeconfig.cache
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Footer\Default.cshtml.g.cs
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admeen\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admeen\Views\_ViewStart.cshtml.g.cs
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admeen\Views\_ViewImports.cshtml.g.cs
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admeen\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admeen\Views\Category\Index.cshtml.g.cs
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admeen\Views\Category\Create.cshtml.g.cs
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admeen\Views\Category\Edit.cshtml.g.cs
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admeen\Views\Tag\Index.cshtml.g.cs
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_PartialView.cshtml.g.cs
