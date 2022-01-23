@@ -34,6 +34,14 @@ namespace FiorellaBack.Controllers
             if (flower == null) return NotFound();
             return View(flower);
         }
+        public IActionResult SearchResult(string word)
+        {
+            List<Flower> prdcts = _context.Flowers.Where(f => f.Name.ToLower().Contains(word.ToLower())).Include(f => f.FlowerCategories).ThenInclude(fc => fc.Category).Include(f => f.Campaign).Include(f => f.FlowerImages).ToList();
+            return View(prdcts);
+
+
+        }
+
     }
 }
 

@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -29,6 +31,17 @@ namespace FiorellaBack.Models
         public List<FlowerImage> FlowerImages { get; set; }
         public List<FlowerCategory> FlowerCategories { get; set; }
         public List<FlowerTag> FlowerTags { get; set; }
+        
+        [NotMapped]
+        public List<int> CategoryIds { get; set; }
+        [NotMapped]
+
+        public IFormFile MainImageFile { get; set; }
+        [NotMapped]
+        public List<IFormFile> ImageFiles { get; set; }
+        [NotMapped]
+
+        public List<int> ImageIds { get; set; }
 
 
     }

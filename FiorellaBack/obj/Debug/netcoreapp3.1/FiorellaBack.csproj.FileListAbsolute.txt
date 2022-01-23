@@ -267,7 +267,6 @@ C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\bin\Debug\netcoreapp3.1\r
 C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\FiorellaBack.csproj.AssemblyReference.cache
 C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\FiorellaBack.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\FiorellaBack.AssemblyInfoInputs.cache
 C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\FiorellaBack.AssemblyInfo.cs
@@ -302,3 +301,12 @@ C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\R
 C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admeen\Views\Category\Edit.cshtml.g.cs
 C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\Razor\Areas\Admeen\Views\Tag\Index.cshtml.g.cs
 C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_PartialView.cshtml.g.cs
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\Razor\Views\Flower\SearchResult.cshtml.g.cs
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\FiorellaBack.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\FiorellaisCameBack\FiorellaBack\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs

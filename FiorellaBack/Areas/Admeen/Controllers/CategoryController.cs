@@ -8,28 +8,28 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace FiorellaBack.Areas.Admeen.Controllers
-{        [Area("Admeen")]
+{
+    [Area("Admeen")]
+
     public class CategoryController : Controller
     {
-
         private readonly AppDbContext _context;
-
         public CategoryController(AppDbContext context)
         {
             _context = context;
         }
-
-        public IActionResult Index()
+        public IActionResult Index(int page = 1)
         {
-            List<Category> model = _context.Categories.Include(c => c.FlowersCategories).ToList();
-
+            ViewBag.TotalPage = Math.Ceiling((decimal)_context.Categories.Count() / 2);
+            ViewBag.CurrentPage = page;
+            List<Category> model = _context.Categories.Include(c => c.FlowersCategories).Skip((page - 1) * 2).Take(2).ToList();
             return View(model);
         }
-
         public IActionResult Create()
         {
             return View();
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Category category)
@@ -39,6 +39,7 @@ namespace FiorellaBack.Areas.Admeen.Controllers
                 return View();
             }
 
+
             _context.Categories.Add(category);
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
@@ -46,37 +47,41 @@ namespace FiorellaBack.Areas.Admeen.Controllers
 
         public IActionResult Edit(int id)
         {
-            Category existed = _context.Categories.FirstOrDefault(f => f.Id == id);
-            return View(existed);
+            Category category = _context.Categories.FirstOrDefault(c => c.Id == id);
+            return View(category);
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-
         public IActionResult Edit(Category category)
         {
             if (!ModelState.IsValid)
             {
                 return View();
             }
-
-            Category existed = _context.Categories.FirstOrDefault(f => f.Id == category.Id);
-            if (existed == null)
+            Category existedCategory = _context.Categories.FirstOrDefault(c => c.Id == category.Id);
+            if (existedCategory == null)
             {
                 return NotFound();
             }
 
-            Category samename = _context.Categories.FirstOrDefault(f => f.Name.ToLower().Trim() == category.Name.ToLower().Trim());
-            if (samename != null)
+            Category sameName = _context.Categories.FirstOrDefault(c => c.Name.ToLower().Trim() == category.Name.ToLower().Trim());
+            if (sameName != null)
             {
-                ModelState.AddModelError("", "This category is already exists");
+                ModelState.AddModelError("", "This category is already existed.");
                 return View();
             }
-
-            existed.Name = category.Name;
+            existedCategory.Name = category.Name;
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
-
         }
-
+        public IActionResult Delete(int id)
+        {
+            Category category = _context.Categories.FirstOrDefault(c => c.Id == id);
+            if (category == null) return Json(new { status = 404 });
+            _context.Categories.Remove(category);
+            _context.SaveChanges();
+            return Json(new { status = 200 });
+        }
     }
 }

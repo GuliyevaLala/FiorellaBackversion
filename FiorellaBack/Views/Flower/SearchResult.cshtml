@@ -1,0 +1,46 @@
+﻿@model List<Flower>
+{
+
+    ViewData["Title"] = "SearchResult";
+}
+
+@*<h1>SearchResult</h1>*@
+
+@*<table class="mt-3 table table-dark" style="color:mediumaquamarine" >
+    <thead>
+        <tr>
+            <th>
+                #
+            </th>
+            <th>
+                Category name
+            </th>
+            <th>
+                Flower count
+            </th>
+            <th>
+                Settings
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Flower flower in Model)
+        {
+        <tr>
+            <td>
+                @flower.Id
+            </td>
+            <td>
+                @flower.FlowerImages.FirstOrDefault().Image
+            </td>
+            <td>
+                @flower.Name
+            </td>
+            <td>
+                @flower.Price
+            </td>
+            
+        </tr>
+        }
+    </tbody>
+</table>*@

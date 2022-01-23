@@ -1,4 +1,6 @@
-﻿@foreach (Flower flower in Model.Flowers)
+﻿@model List<Flower>
+
+@foreach (Flower flower in Model)
 {
 <div class="product all  @foreach (FlowerCategory flowerCategory in flower.FlowerCategories)
                         {
@@ -12,13 +14,13 @@
                 @if (flowerImage.IsMain == true)
                 {
                     <a asp-controller="flower" asp-action="details" asp-route-id="@flower.Id">
-                        <img src="~/Assets/photos/@flowerImage.Image" alt="">
+                        <img src="~/Assets/photos/@flowerImage.Image" style="width:250px"  alt="">
                     </a>
 
                 } 
             }
         </div>
-        <div class="productName">
+        <div class="productName d-flex justify-content-center">
             @flower.Name
         </div>
         <div class="productPrice cart-container d-flex justify-content-center">
@@ -26,7 +28,7 @@
                 @if (flower.CampaignId == null)
                 {
                     <div class="text"><span>Add to cart</span></div>
-                    <div class="price"><span style="font-size: 12px;">@flower.Price</span><span>$</span></div>
+                    <div class="price"><span style="font-size: 15px;">@flower.Price</span><span>$</span></div>
                 }
                 else
                 {
